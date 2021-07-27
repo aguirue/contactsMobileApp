@@ -1,4 +1,4 @@
-package mx.uv.profa.course.profaapp
+package mx.uv.profa.course.contacts
 
 import org.junit.Test
 

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">ProFAApp</string>
+    <string name="app_name">Mis Contactos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_phone">Telefono</string>
+    <string name="text_email">Email</string>
+    <string name="enviar_email">Enviar email</string>
+    <string name="llamar">llamar</string>
+    <string name="email">email</string>
 </resources>

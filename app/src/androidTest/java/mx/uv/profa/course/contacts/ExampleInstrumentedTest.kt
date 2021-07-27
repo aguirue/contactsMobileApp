@@ -1,4 +1,4 @@
-package mx.uv.profa.course.profaapp
+package mx.uv.profa.course.contacts
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("mx.uv.profa.course.profaapp", appContext.packageName)
+        assertEquals("mx.uv.profa.course.contacts", appContext.packageName)
     }
 }

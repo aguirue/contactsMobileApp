@@ -1,0 +1,133 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9A353333"
+    tools:context="Fragments.ContactDetailFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#74535151"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/contact_detail_avatar"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/contact_detail_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/contact_detail_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Josue Aguilera"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detail_avatar" />
+
+            <TextView
+                android:id="@+id/contact_detail_ocupation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                tools:text="Profesor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detail_name" />
+
+            <TextView
+                android:id="@+id/contact_detail_phone_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_phone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detail_ocupation" />
+
+            <TextView
+                android:id="@+id/contact_detail_email_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/text_email"
+                app:layout_constraintBottom_toTopOf="@+id/contact_detail_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.575"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detail_ocupation" />
+
+            <TextView
+                android:id="@+id/contact_detil_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="2288591686"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detail_phone_label" />
+
+            <TextView
+                android:id="@+id/contact_detail_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="aguirue@gmail.com"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detail_email_label" />
+
+            <ImageButton
+                android:id="@+id/contact_detail_call_button"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="@null"
+                android:src="@drawable/ic_button_email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/contact_detail_email_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detil_phone"
+                android:contentDescription="@string/llamar"
+                app:layout_constraintVertical_bias="0.51" />
+
+            <ImageButton
+                android:id="@+id/contact_detail_email_button"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:src="@drawable/ic_button_email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                android:contentDescription="@string/email"
+                app:layout_constraintTop_toBottomOf="@+id/contact_detail_email" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
